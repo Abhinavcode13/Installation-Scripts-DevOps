@@ -1,24 +1,75 @@
+# Search for Docker images with the specified name
 docker search image-name
+
+# Display system-wide information about Docker
 docker info
-Docker pull
-docker run 
+
+# Pull an image from a registry
+docker pull image-name
+
+# Run a container based on a pulled or existing image
+docker run image-name
+
+# Display the logs of a specific container
 docker logs container-id
+
+# Display the history of an image
 docker history image-name
+
+# List all containers, including stopped ones
 docker ps -a
+
+# Execute a command inside a running container
 docker exec -it container-name /bin/sh
-docker kill 
-docker stop
-docker network ls 
+
+# Kill a running container
+docker kill container-id
+
+# Stop a running container
+docker stop container-id
+
+# List all Docker networks
+docker network ls
+
+# Display detailed information about a specific network
 docker network inspect network-name
+
+# Push a tagged image to a Docker registry
 docker push tagged-image-name
-docker rmi  
-docker rm
+
+# Remove a Docker image
+docker rmi image-name
+
+# Remove a stopped or running container
+docker rm container-id
+
+# Rename a Docker container
 docker rename old_container_name new_container_name
-docker pause container_ID_or_name    
-docker unpause container_ID_or_name  
-docker port container_ID_or_name 
-docker diff container_ID_or_name
-docker top container_ID_or_name
+
+# Pause a running container
+docker pause container-ID_or_name
+
+# Unpause a paused container
+docker unpause container-ID_or_name
+
+# Display the public-facing port of a container
+docker port container-ID_or_name
+
+# Show changes in the filesystem of a container
+docker diff container-ID_or_name
+
+# Display the running processes of a container
+docker top container-ID_or_name
+
+# Display real-time resource usage statistics of containers
 docker stats
-docker login & logout
-docker run -d --name sonar test -p 9000:9000 sonarqube:lts-community
+
+# Log in to a Docker registry
+docker login
+
+# Log out from a Docker registry
+docker logout
+
+# Run a Docker container in the background with specified name and port mapping
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+
