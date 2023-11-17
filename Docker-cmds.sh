@@ -21,3 +21,4 @@ docker diff container_ID_or_name
 docker top container_ID_or_name
 docker stats
 docker login & logout
+docker run -d --name sonar test -p 9000:9000 sonarqube:lts-community
