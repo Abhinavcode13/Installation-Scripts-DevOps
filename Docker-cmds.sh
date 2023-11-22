@@ -1,4 +1,4 @@
-# Search for Docker images with the specified name
+# Search for Docker images with the specified name in the server
 docker search image-name
 
 # Display system-wide information about Docker
