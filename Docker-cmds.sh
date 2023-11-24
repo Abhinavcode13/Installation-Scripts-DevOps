@@ -73,3 +73,6 @@ docker logout
 # Run a Docker container in the background with specified name and port mapping
 docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 
+#Tagging a docker image
+
+docker tag <image-name> <username-of-dockerhub>/<image-name>
