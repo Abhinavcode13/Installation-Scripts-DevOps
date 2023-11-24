@@ -76,3 +76,11 @@ docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
 #Tagging a docker image
 
 docker tag <image-name> <username-of-dockerhub>/<image-name>
+
+#Build a docker image
+
+docker build -t <image-name>
+
+#Pull the docker image
+
+docker pull <image-name>
