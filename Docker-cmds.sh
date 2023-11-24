@@ -4,7 +4,7 @@ docker search image-name
 # Display system-wide information about Docker
 docker info
 
-# Pull an image from a registry (Docker hub)
+# Pull an image from a registry (Docker hub) - In first it checks the image locally in the machine else it download the docker image.
 docker pull image-name
 
 # Run a container based on a pulled or existing image
