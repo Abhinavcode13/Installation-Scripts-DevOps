@@ -31,14 +31,44 @@ Syntax : ADD <url-to-download> <destination>
 
 RUN
 +++++++++++++++
-Used to execute commands on top of base image..
+Used to execute commands on top of base image.
 Run command instructions will execute while creating the image.
+There can be multiple RUN instructions which are executed from top to bottom.
 Ex : RUN mkdir workspace , RUN yum install git
 
 CMD
 +++++++++++++++
 It is also used to execute the commands.
 CMD instructions will execute while creating the conatiners.
+We can write multiple CMD instructions but docker will process only last CMD instruction.
+Ex : CMD sudo start tomcat
+
+ENTRYPOINT
++++++++++++++++
+ENTRYPOINT instructions we cannot override while CMD instructions can.
+Ex : ENTRYPOINT["echo", "Welcome"]
+
+WORKDIR
++++++++++++++++
+It is used to set working directory for an image/conatiner.
+Ex : WORKDIR <DIR-PATH>
+
+ENV
++++++++++++++++
+It is used to set the environment variables.
+Ex : ENV <key><value>
+
+LABEL
++++++++++++++++
+It represent the data in key-value pair.
+It is used to add meta data for our image.
+EX : LABEL branchname release
+
+ARG 
++++++++++++++++
+It is used to avoid hard coded value in Dockerfile
+We can pass arguement values in runtime.
+Ex : docker build -t imageone --build-arg branch=feature
 
 ![Docker-run-cmd](https://github.com/Abhinavcode13/Installation-Scripts-DevOps/assets/126642111/0a75ddcf-f329-4488-9abd-65f9bd4ce667)
 
