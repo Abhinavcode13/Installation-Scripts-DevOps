@@ -70,6 +70,16 @@ It is used to avoid hard coded value in Dockerfile
 We can pass arguement values in runtime.
 Ex : docker build -t imageone --build-arg branch=feature
 
+USER
++++++++++++++++
+We can set user for an image/container
+Note : After user instruction , remaining instructions will be proceed with given USER.
+
+EXPOSE
++++++++++++++++
+It represents on which port number our conatiner is running.
+
+
 ![Docker-run-cmd](https://github.com/Abhinavcode13/Installation-Scripts-DevOps/assets/126642111/0a75ddcf-f329-4488-9abd-65f9bd4ce667)
 
 
