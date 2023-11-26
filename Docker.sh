@@ -16,3 +16,20 @@ sudo apt install docker-ce -y
 #sudo systemctl status docker
 
 sudo chmod 777 /var/run/docker.sock
+
++++++++++++++++ Docker install in Amazon linux +++++++++++++
+
+$ sudo yum update -y
+$ sudo yum install docker -y
+$ sudo service docker start
+$ sudo usermod -aG docker ec2-user(server name)
+
+$ docker info
+$ docker --v
+
+Restart the session 
+$ exit
+
+Press R to restart the session in Mobaxterm
+
+
