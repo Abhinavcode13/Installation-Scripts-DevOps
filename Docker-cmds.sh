@@ -81,6 +81,9 @@ docker tag <image-name> <username-of-dockerhub>/<image-name>
 
 docker build -t <image-name>
 
+#Run the docker image
+docker run -d -p 8080:8080 <docker-image-name> (8080 port is for tomcat server)
+
 #Pull the docker image
 
 docker pull <image-name>
