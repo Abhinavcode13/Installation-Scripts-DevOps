@@ -70,8 +70,8 @@ docker login
 # Log out from a Docker registry
 docker logout
 
-# Run a Docker container in the background with specified name and port mapping
-docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+# Run a Docker container in the background with specified name and port mapping (right side of : is container port and left side of : is the host port number)
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community 
 
 #Tagging a docker image
 
