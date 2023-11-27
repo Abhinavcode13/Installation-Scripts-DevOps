@@ -23,3 +23,11 @@ $ docker-compose down
 #list down running docker images
 $ docker-compose images
 
+Docker compose installation
++++++++++++++++++++++++++++
+
+1) $ sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+
+2) $ sudo chmod +x /usr/local/bin/docker-compose
+
+3) $ docker-compose version
