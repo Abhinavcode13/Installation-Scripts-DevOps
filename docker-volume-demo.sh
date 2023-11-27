@@ -40,3 +40,25 @@ $ echo "Welcome to application" > index.html
 $ docker stop <container-id>
 #run another docker container (modified data should reflect here also)
 $ docker run -d --name=webapp20 --mount source=new-vol,destination=/usr/share/ngnix/html -p 80:80 ngnix
+
+
+
+Host directory mounting to docker container
++++++++++++++++++++++++++++++++++++++++++++
+
+#Create directory in the host machine
+$ mkr dir /temp/ngnix/html
+
+#run the docker container for ngnix image with directory mounting (container name is c1)
+$ docker run -d -p 80:80 -v /temp/ngnix/html:/usr/share/ngnix/html --name=c1 ngnix:latest
+
+#check the container is running or not
+$ docker conatiner ls
+
+#access ngnix webserver using ec2 public ip address (It will not be displayed beacuse index.html is not available in the container)
+
+#Go to mounted directory in VM machine
+$ cd/temp/ngnix/html
+
+#create index.html file (save the file and close it)
+$ vi index.html
