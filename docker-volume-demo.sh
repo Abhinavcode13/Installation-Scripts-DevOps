@@ -16,7 +16,7 @@ $ echo "Welcome to application" > index.html
 #Stop docker container
 $ docker stop <container-id>
 
-#Note: Access static website using ec-2 VM which is hosted by ngnix
+#Note: Access static website using ec-2 VM which is hosted by ngnix (changes we made in first container will not be displayed here)
 #start another docker container named as webapp2
 $ docker name --name=webapp2 -d -p 80:80 ngnix
 
