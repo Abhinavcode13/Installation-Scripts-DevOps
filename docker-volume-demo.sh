@@ -62,3 +62,29 @@ $ cd/temp/ngnix/html
 
 #create index.html file (save the file and close it)
 $ vi index.html
+
+
+
+
+Docker Volume
+++++++++++++++
+
+-> docker networking enables a user to link a docker container to as many network as they require.
+-> docker network is used to provide complete isolation for docker container.
+
+Advantages
+-> docker containers shares single operating system in isolated manner.
+-> It helps in application portability.
+-> It helps in fast delivery of softwares.
+
+When docker is installed in the machine by default 3 docker networks will be configured.
+1) none
+2) host
+3) bridge
+
+Docker provide networking to containers using network drivers :
+1) none
+2) host 
+3) bridge (default)
+4) Overlay
+5) Macvlan
