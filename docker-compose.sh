@@ -9,7 +9,7 @@
 
 sample docker-compose.yml file
 
-version :
+version : What version of machine is used?
 services :
 network :
 volumes :
