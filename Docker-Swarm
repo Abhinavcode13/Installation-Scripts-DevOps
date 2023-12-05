@@ -1,3 +1,0 @@
--> Docker Swarm is a orchestration tool provided by docker software - In simple words managing the process.
--> Docker swarm is used to setup docker clusters (load balancing) - Cluster is group of services
--> In this we have two nodes as master and worker node in which master will schedule the tasks and monitor failure of nodes and worker node worker nodes will perform the actions.
